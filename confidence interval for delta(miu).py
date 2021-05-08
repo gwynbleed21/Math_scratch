@@ -20,13 +20,13 @@ if len(X) == len(Y):
 print(" xd = " , xd ," \n", "xv = " , xv ," \n", "yd = " , yd ," \n", "yv = " , yv ," \n",)
 
 if len(X) > 30:
-    z = np.float(input("z"))
+    z = np.float(input("z")) # z value from a Gaussian / Normal Distribution | use a table of known values
     lb = xd - yd - z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))   #lower boundary
     ub = xd - yd + z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))    # upper boundary
     print(lb , "< µ <", ub)
 if len(X) < 30:
     print("degrees of freedom: " , (len(X)+len(Y)-2))
-    t = np.float64(input("t"))
+    t = np.float64(input("t")) #  t value from a t-distribution of the correct degree of freedom | use a table of known values
     pv = (xv*(len(X)-1) + yv*(len(Y)-1))/(len(X)+len(Y)-2)             #pool variance estimate
     #print(pv, "\n" , t)   #check
     lb = xd - yd - t*(np.sqrt( pv*((1/len(X)) + (1/len(Y)))))
