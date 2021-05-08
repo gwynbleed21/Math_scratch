@@ -1,6 +1,6 @@
 import numpy as np  
 x =[46,46,48,42,40,38]  # input lists
-y =[0,0,0,0,0,0]        # this program is a calculator for the mean and unbiased approximation for variance of the difference between two sets of data.
+y =[0,0,0,0,0,0]        # this program is a calculator for the mean and unbiased estimate for variance of the difference between two sets of data.
 j=[]                    
 for i in x:
     for k in y:
