@@ -10,7 +10,7 @@ jl = j[::(len(x)+1)]
 #print(j)
 print(jl)
 print("d = " , sum(jl)/len(jl))
-if len(x) == len(y):  # same thing, just to ceck if the first one is correct.
+if len(x) == len(y):  # same thing, just to check if the first one is correct.
     z = sum(x)-sum(y)
     print("d = " , z/len(x))
 St = []
