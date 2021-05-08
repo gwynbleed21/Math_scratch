@@ -21,8 +21,8 @@ print(" xd = " , xd ," \n", "xv = " , xv ," \n", "yd = " , yd ," \n", "yv = " , 
 
 if len(X) > 30:
     z = np.float(input("z"))
-    lb = xd - yd - z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))
-    ub = xd - yd + z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))
+    lb = xd - yd - z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))   #lower boundary
+    ub = xd - yd + z*(np.sqrt( (xv/len(X)) + (yv/len(Y))))    # upper boundary
     print(lb , "< µ <", ub)
 if len(X) < 30:
     print("degrees of freedom: " , (len(X)+len(Y)-2))
