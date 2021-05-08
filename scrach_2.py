@@ -1,7 +1,7 @@
-import numpy as np
-x =[46,46,48,42,40,38]
-y =[0,0,0,0,0,0]
-j=[]
+import numpy as np  
+x =[46,46,48,42,40,38]  # input lists
+y =[0,0,0,0,0,0]        # this program is a calculator for the mean and unbiased approximation for variance of the difference between two sets of data.
+j=[]                    
 for i in x:
     for k in y:
         r = i - k
@@ -10,7 +10,7 @@ jl = j[::(len(x)+1)]
 #print(j)
 print(jl)
 print("d = " , sum(jl)/len(jl))
-if len(x) == len(y):  # same thing
+if len(x) == len(y):  # same thing, just to ceck if the first one is correct.
     z = sum(x)-sum(y)
     print("d = " , z/len(x))
 St = []
